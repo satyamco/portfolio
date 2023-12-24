@@ -24,7 +24,7 @@ font-family: 'Inter';
     height: 20px;
     border-radius: 100%;
     mix-blend-mode: difference;
-    background-color: rgb(255, 115, 0);
+    background-color: black;
     z-index: 9999;
     
 }
