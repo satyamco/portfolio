@@ -1,0 +1,759 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700&display=swap');
+* { 
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html, body {
+width: 100%;
+height: 100%;
+background-color: #fff;
+overflow-x: hidden;
+font-family: 'Inter';
+}
+
+
+/* Utility classes */
+
+
+.cursor{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    mix-blend-mode: difference;
+    background-color: white;
+    z-index: 99;
+    
+}
+
+
+.heading-box{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 8px;
+    background-color: #0000001e;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color: #000000;
+    opacity: .8;
+}
+
+
+.container{
+   max-width: 1000px;
+   margin: auto;
+}
+
+.big-container{
+    width: 1440px;
+    border-radius: 30px;
+    margin: auto;
+    
+}
+
+
+
+.p-btn{
+    padding: 20px 60px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #000000;
+    background-color: #ffffff;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.p-btn:hover{
+    background-color: #d8d8d8;
+    color: #000;
+    
+}
+
+
+
+
+a{
+    text-decoration: none;
+    color: #4a4a4a;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+
+/* NavBar */
+
+nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+}
+
+.navcontent{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     width: 100%;
+     height: 72px;
+     background-color: #ffffff;
+     margin: 30px;
+     border-radius: 20px;
+     /* margin-left: 14px; */
+     
+}
+
+
+.nav-links{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+}
+
+.nav-links a{
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.contact{
+    border: 2px solid rgb(205, 205, 205);
+}
+
+.nav-links a:hover{
+    background-color: #00000014;
+}
+
+
+.logo{
+    font-size: 26px;
+    margin-left: 40px;
+    font-weight: 700;
+    color: #2a2a2a;
+    text-transform: capitalize  ;
+}
+
+
+
+
+/* main */
+
+main{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+/* Hero Section */
+
+
+.section{
+    display: flex;
+    justify-content: center;
+}
+
+
+.hero{
+   width: 100%;
+   height: 700px;
+   margin:  140px auto;
+   margin-bottom: 80px;
+   background: linear-gradient(to top left, #3d3d3d, #000000);
+   border-radius: 30px;
+   display: flex;
+   position: relative;
+   align-items: center;
+   justify-content: center;
+   
+}
+
+.big-container{
+    width: 1440px;
+    border-radius: 30px;
+    
+}
+
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero-content h1{
+    font-size: 124px;
+    font-weight: 700;
+    letter-spacing: -2px;
+    line-height: 110px;
+}
+
+.hero-content p{
+    font-size: 32px;
+    font-weight: 500;
+
+}
+
+
+
+/* technology section */
+
+.technology{
+    margin: 100px auto;
+    margin-bottom: 140px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    color: #000000;
+    opacity: .8;
+}
+
+
+.technology h2{
+    font-size: 46px;
+
+}
+
+.logos{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.img{
+    font-size: 20px;
+    font-weight: bolder;
+    opacity: 0.6;  
+}
+
+
+/* projects section */
+
+.projects{
+    background-color: #0000000e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 70px;
+    align-items: center;
+
+
+}
+
+.project-head{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-head p{
+    margin-top: 70px;
+}
+
+.project-head h2{
+    font-size: 42px;
+    text-align: center;
+    margin-top: 32px;
+    color: #000000;
+    opacity: .8;
+
+}
+
+
+
+.project-box{
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+    width: 100%;
+    border-radius: 20px;
+    justify-content: center;
+    color: #000000;
+    opacity: .8;
+    
+
+}
+
+.project-box img{
+    width: 50%;
+    height: auto;
+    margin: 24px;
+    border-radius: 16px;
+    
+}
+
+.p-text{
+   display: flex;
+   margin-left: 40px;
+   margin-right: auto;
+   width: 40%;
+   flex-direction: column;
+   gap: 16px;
+}
+
+.p-text p{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: #000000;
+    opacity: .8;
+
+}
+
+.p-text h3{
+    font-size: 32px;
+    
+}
+
+.p-text h5{
+    font-size: 18px;
+    font-weight: 500;
+    opacity: .6;
+}
+
+
+.p-text-left{
+   display: flex;
+   margin-left: 64px;
+   margin-right: auto;
+   width: 40%;
+   flex-direction: column;
+   gap: 16px;
+}
+
+.p-text-left p{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: #000000;
+    opacity: .8;
+}
+
+.p-text-left h3{
+    font-size: 32px;
+}
+
+.p-text-left h5{
+    font-size: 18px;
+    font-weight: 500;
+    opacity: .6;
+}
+
+.margin-b{
+    margin-bottom: 90px;
+}
+
+.project-btn{
+    margin-right: 20px;
+    padding-block: 5px;
+    color: #003a7d;
+}
+
+.project-btn:hover{
+     color: #0077ff ;
+}
+
+.ri-arrow-right-up-line{
+    font-size: 18px;
+}
+
+
+/* lets connect */
+
+.connect{
+    margin: 180px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+   
+
+}
+
+.connect h3{
+    font-size: 36px;
+    opacity: .8;
+}
+
+.connect a{
+    background-color: #000;
+    color: #fff;
+}
+
+.connect a:hover{
+    background-color:#1c1c1c ;
+    color: #ffffff;
+}
+
+
+
+
+
+/* footer */
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px auto;
+    margin-top: 100px;
+}
+
+.f-logo{
+    font-size: 26px;
+    font-weight: 700;
+    color: #2a2a2a;
+    text-transform: capitalize;
+}
+
+.f-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1000px;
+    
+}
+
+.f-links div a{
+    margin-left: 20px;
+}
+
+
+hr{
+    border: 1px solid rgb(122, 122, 122);
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.copyright{
+    font-size: 14px;
+    margin: 30px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/*  media quries  */
+
+
+@media (max-width:1024px) {
+
+    .container{
+        width: 708px;
+    }
+
+
+    .p-btn{
+        padding: 18px 70px;
+    }
+
+    .hero-content{
+        gap:20px;
+    }
+    
+    .hero-content h1{
+        font-size: 94px;
+        line-height: 90px;
+    }
+
+    .hero-content p{
+        font-size: 24px;
+    }
+/* technology */
+
+    .technology h2{
+        font-size: 36px;
+    }
+
+    /* project */
+
+    .projects{
+        gap: 60px;
+    }
+
+    .project-head h2{
+        font-size: 30px;
+    }
+
+    .p-text{
+        gap: 10px;
+        margin-left: 30px;
+    }
+
+    .p-text h3{
+        font-size: 26px;
+    }
+
+    .p-text h5{
+        font-size: 16px;
+    }
+
+    .p-text-left{
+        gap: 10px;
+        margin-left: 50px;
+    }
+
+    .p-text-left h3{
+        font-size: 26px;
+    }
+
+    .p-text-left h5{
+        font-size: 16px;
+    }
+
+    /* connect */
+     
+    .connect h3{
+        font-size: 30px;
+    }
+}
+
+@media (max-width:768px) {
+
+    .cursor{
+        display: none;
+    }
+
+    .heading-box{
+        font-size: 14px;
+    }
+    
+    .container{
+        width: 412px;
+    }
+    
+    .navcontent{
+        height: 64px;
+        margin: 20px;
+        border-radius: 10px;
+    }
+    .nav-links{
+         gap: 10px;
+         margin-right: 20px;
+    }
+    .nav-links a{
+        padding: 5px 10px;
+        border-radius: 6px;
+        font-size: 14px;
+    }
+
+    .logo{
+        font-size: 22px;
+        margin-left: 20px;
+    }
+
+    /* hero */
+    
+    .hero{
+        height: 600px;
+        margin: 120px auto;
+        margin-bottom: 40px;
+    }
+
+    .hero-content{
+        gap: 20px;
+    }
+    .hero-content h1{
+        font-size: 54px;
+        line-height: 50px;
+        letter-spacing: normal;
+    }
+    .hero-content p{
+        font-size: 20px;
+    }
+
+    .p-btn{
+        padding: 14px 40px;
+        font-size: 14px;
+    }
+
+    /* technology */
+     
+    .technology h2{
+        font-size: 28px;
+    }
+    .img{
+        font-size: 16px;
+    }
+
+    /* projects */
+
+    .project-head h2{
+        font-size: 24px;
+    }
+
+    .project-box{
+        flex-direction: column;
+    }
+
+    .project-box img{
+        width: 80%;
+    }
+
+    .p-text{
+        width: 80%;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 40px;
+    }
+    .p-text-left{
+        width: 80%;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 40px;
+    }
+    .s-l{
+        flex-direction: column-reverse;
+    }
+    .project-btn{
+        margin: 15px;
+    }
+
+    /* connect */
+
+    .connect{
+        gap: 36px;
+        width: 400px;
+        margin: 100px auto;
+        margin-bottom: 100px;
+    }
+
+    .connect h3{
+        font-size: 20px;
+    }
+
+    /* footer */
+
+
+    .f-logo{
+        font-size: 22px;
+        margin-left: 10px;
+    }
+
+    .f-links{
+        font-size: 12px;
+        gap: 10px;
+        margin-right: 10px;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .f-links div a{
+        margin-left: 10px;
+    }
+
+}
+
+@media (max-width:450px) {
+    .cursor{
+        display: none;
+    }
+
+  .navcontent{
+    margin: 6px;
+    border-radius: 14;
+    height: 56px;
+  }
+
+  .nav-links{
+    margin-right: 10px;
+  }
+   
+    .logo{
+    font-size: 20px;
+    margin-left: 10px;
+   }
+
+.hero-content h1{
+    font-size: 44px;
+}
+
+.hero-content p{
+    font-size:20px;
+    width: 350px;
+}
+
+.technology{
+    width: 350px;
+}
+.technology h2{
+    font-size: 22px;
+    
+}
+.img{
+   font-size: 14px;
+}
+
+.project-head h2{
+    font-size: 20px;
+    width: 350px;
+}
+
+.connect{
+    font-size: 18px;
+    width: 350px;
+}
+
+.f-links{
+    width: 350px;
+}
+
+.f-links div a {
+    font-size: 14px;
+}
+
+.project-box{
+    width: 350px;
+}
+
+.project-box h3{
+    font-size: 22px;
+}
+.project-btn{
+    font-size: 14px; 
+    margin-right: 10px;   
+}
+
+
+.ri-arrow-right-up-line{
+    font-size: 16px;
+}
+ 
+}
+  
+
+
